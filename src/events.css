@@ -1,0 +1,35 @@
+.event-container {
+    border: 6px solid #001f4d;
+    max-width: 800px; 
+    margin-left: 400px;
+    margin-right: 200px;
+    overflow: hidden;
+    
+  }
+  .event-content-wrapper {
+    padding: 10px;
+    animation: moveUp 12s ease-out infinite;
+    animation-play-state: running; 
+  }
+  
+  
+  .event-content-wrapper:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes moveUp {
+    0% {
+      transform: translateY(100%);
+    }
+    90% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(-100%);
+      
+    }
+  }
+  
+  h2{
+    color: #001f4d;
+  }
